@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* > * {
+  font-family: "Poppins", sans-serif;
+}
+
+.home-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.home-component h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.home-component p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.home-component .btn {
+  background-color: #333;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.home-component .btn:hover {
+  background-color: #444;
+}
+
+.services-component {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.services-component .service {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.services-component .service h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.services-component .service p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.services-component .service .btn {
+  background-color: #333;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.services-component .service .btn:hover {
+  background-color: #444;
+}
+
+.footer {
+  /* background-color: green; */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: white;
+}
