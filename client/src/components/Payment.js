@@ -1,6 +1,10 @@
 import axios from "axios";
+import {useNavigate} from "react-router-dom"
 
 export default function Payment() {
+
+  const navigate = useNavigate();
+
   const data = axios
     .post("http://localhost:3000/razorpay", {
       // method: "POST",
@@ -21,6 +25,7 @@ export default function Payment() {
       alert("PAYMENT_ID : " + response.razorpay_payment_id);
       alert("ORDER_ID : " + response.razorpay_order_id);
       alert(response.razorpay_signature);
+      navigate('/payment-success');
     },
     prefill: {
       name: "Surya Gokul",

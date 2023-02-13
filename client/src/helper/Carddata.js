@@ -10,7 +10,7 @@ export default function CardData(props) {
     console.log(event.target.innerHTML);    
   }
   return (
-    <Card style={{ height: "500px" }}>
+    <Card style={{ height: "500px" }} className="h-100">
       <Card.Img variant="top" src={props.image} />
       <Card.Body style={{ display: "flex", flexDirection: "column" }}>
         <Card.Title>{props.title}</Card.Title>

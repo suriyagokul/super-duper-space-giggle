@@ -12,6 +12,7 @@ import About from "./components/About";
 import Payment from "./components/Payment";
 import Testimonials from "./components/Testimonials";
 import Appointment from "./components/Appointment";
+import PaymentSuccess from "./components/PaymentSuccess"
 import PageNotFound from "./components/PageNotFound";
 import {AuthorizeUser, ProtectRoute} from "./middleware/auth"
 // import Openai from "./components/Openai";
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
   {
     path: "/payment",
     element: <AuthorizeUser><Payment></Payment></AuthorizeUser> ,
+  },
+  {
+    path: "/payment-success",
+    element: <AuthorizeUser><PaymentSuccess></PaymentSuccess></AuthorizeUser> ,
   },
   {
     path: "*",

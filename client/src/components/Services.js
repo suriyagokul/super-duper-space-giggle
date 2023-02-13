@@ -18,8 +18,9 @@ function Services() {
       <h2 className="mt-3">Our Services</h2>
 
       <Row xs={1} md={3} className="g-4">
-        <Col>
+        <Col className="col-sm-12">
           <CardData
+            
             id="1"
             image="https://media.istockphoto.com/id/1210318350/vector/doctor-at-home.jpg?s=612x612&w=0&k=20&c=gHcXkwpiLw9Rrn7cQ01pCRJyIRonfzQ_P2c4vwnA9GM="
             title="Doctor Visits"
